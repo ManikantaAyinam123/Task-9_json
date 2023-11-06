@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Card Display</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"rel="stylesheet"/>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="data.json"></script>
+  </head>
+ 
+  <body onload="data('Available')">
+    <!--nav start-->
+    <div class="nav mt-3">
+      <button class="nav-link active text-dark fw-bold rounded border-0"data-bs-toggle="tab"onclick="data('Available')">Available</button>
+      <button class="nav-link text-dark fw-bold rounded border-0 " data-bs-toggle="tab"  onclick="data('Upcoming')">Upcoming</button>
+      <button class="nav-link text-dark fw-bold rounded border-0 "data-bs-toggle="tab"onclick="data('Missed')"> Missed</button>
+      </div>
+      <!--nav end-->
+      
+      <!--content start-->
+    <h1 class="d-flex justify-content-center m-5" id="heading">New Arrivals</h1>
+    <div class="container mt-5 border-0">
+      <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper" id="cards-container">
+          <!-- content here -->
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

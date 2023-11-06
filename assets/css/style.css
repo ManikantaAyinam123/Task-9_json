@@ -1,0 +1,14 @@
+
+.swiper-container {
+  overflow: hidden;
+}
+.checked {
+  color: orange;
+}
+.card-img-top {
+  object-fit: cover;
+  height: 200px;
+}
+.active {
+  background-color: green;
+}
